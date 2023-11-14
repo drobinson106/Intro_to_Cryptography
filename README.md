@@ -11,9 +11,12 @@ Execute the following commands to generate a public and private key pair:
 openssl genrsa -out privateKey.pem 3072
 ```
 
-### Generate public key
+### Generate corresponding public key
+```bash
 openssl rsa -in privateKey.pem -pubout -out publicKey.pem
-Batch Encryption (batch_encrypt.sh)
+```Batch
+
+### Encryption (batch_encrypt.sh)
 The script batch_encrypt.sh encrypts all .txt files in the current directory using a given public key (publicKey.pem).
 
 ./batch_encrypt.sh
