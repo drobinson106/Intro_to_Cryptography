@@ -34,13 +34,13 @@ The script batch_decrypt.sh decrypts all .encrypted files in the current directo
 
 ## Digital Signatures
 
-### Create Digital Signature (create_signature.sh)
+### Create Digital Signature (signature_timestamp.sh)
 The script create_signature.sh appends the current timestamp to a file, creating a digital signature.
 ```bash
 ./create_signature.sh
 ```
 
-### Verify Digital Signature (verify_signature.sh)
+### Verify Digital Signature (verify_extract_timestamp.sh)
 The script verify_signature.sh verifies the digital signature, extracts, and displays the timestamp.
 ```bash
 ./verify_signature.sh
