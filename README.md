@@ -6,7 +6,6 @@ This repository contains scripts and instructions for a cryptography assignment 
 
 Execute the following commands to generate a public and private key pair:
 
-```bash
 # Generate private key
 openssl genrsa -out privateKey.pem 3072
 
