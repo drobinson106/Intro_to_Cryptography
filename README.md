@@ -6,12 +6,12 @@ This repository contains scripts and instructions for a cryptography assignment 
 
 Execute the following commands to generate a public and private key pair:
 
-# Generate private key
+### Generate private key
 ```bash
 openssl genrsa -out privateKey.pem 3072
 ```
 
-# Generate public key
+### Generate public key
 openssl rsa -in privateKey.pem -pubout -out publicKey.pem
 Batch Encryption (batch_encrypt.sh)
 The script batch_encrypt.sh encrypts all .txt files in the current directory using a given public key (publicKey.pem).
