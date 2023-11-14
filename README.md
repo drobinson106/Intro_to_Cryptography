@@ -18,7 +18,6 @@ openssl genrsa -out privateKey.pem 3072
 openssl rsa -in privateKey.pem -pubout -out publicKey.pem
 ```
 
-
 ## Batch Processing with Encryption and Decryption
 
 ### Batch Encryption (batch_encrypt.sh)
@@ -33,7 +32,6 @@ The script batch_decrypt.sh decrypts all .encrypted files in the current directo
 ./batch_decrypt.sh
 ```
 
-
 ## Digital Signatures
 
 ### Create Digital Signature (create_signature.sh)
@@ -47,7 +45,6 @@ The script verify_signature.sh verifies the digital signature, extracts, and dis
 ```bash
 ./verify_signature.sh
 ```
-
 
 ## Contributing
 - Feel free to contribute by suggesting improvements, reporting issues, or submitting pull requests.
