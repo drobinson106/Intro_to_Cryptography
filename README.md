@@ -18,6 +18,8 @@ openssl genrsa -out privateKey.pem 3072
 openssl rsa -in privateKey.pem -pubout -out publicKey.pem
 ```
 
+## "Batch Processing with Encryption and Decryption"
+
 ### Batch Encryption (batch_encrypt.sh)
 The script batch_encrypt.sh encrypts all .txt files in the current directory using a given public key (publicKey.pem).
 ```bash
@@ -29,6 +31,8 @@ The script batch_decrypt.sh decrypts all .encrypted files in the current directo
 ```bash
 ./batch_decrypt.sh
 ```
+
+## Digital Signatures
 
 ### Create Digital Signature (create_signature.sh)
 The script create_signature.sh appends the current timestamp to a file, creating a digital signature.
@@ -42,7 +46,7 @@ The script verify_signature.sh verifies the digital signature, extracts, and dis
 ./verify_signature.sh
 ```
 
-### Contributing
+## Contributing
 - Feel free to contribute by suggesting improvements, reporting issues, or submitting pull requests.
 - Make sure to update any placeholders like `publicKey.pem` and `privateKey.pem` with your actual file names. This template provides a brief overview of each script and how to execute them. Users can quickly understand the purpose of each script and how to use them.
 
