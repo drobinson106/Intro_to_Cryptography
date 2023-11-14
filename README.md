@@ -7,8 +7,8 @@ This repository contains scripts and instructions for a cryptography assignment 
 Execute the following commands to generate a public and private key pair:
 
 # Generate private key
-```bash
-openssl genrsa -out privateKey.pem 3072```
+``bash
+openssl genrsa -out privateKey.pem 3072`
 
 # Generate public key
 openssl rsa -in privateKey.pem -pubout -out publicKey.pem
